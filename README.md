@@ -26,21 +26,21 @@ Aucune installation : on télécharge, on lance, c'est prêt.
 
 | N° | Module | Ce qu'il fait |
 |----|--------|---------------|
-| 01 | 📊 **Informations système** | OS, architecture, processeur, cœurs CPU, RAM et disque |
+| 01 | 📊 **Informations système** | OS, processeur, carte graphique, RAM, disques, durée d'allumage |
 | 02 | 🐍 **Outils Python** | Lister / installer des modules pip, lancer un script Python |
-| 03 | 🌐 **Outils réseau** | Ping, configuration IP, test de connexion Internet |
-| 04 | 📁 **Gestionnaire de fichiers** | Contenu du dossier courant, tailles et statistiques |
-| 05 | 📈 **Moniteur système** | Usage CPU / RAM / disque en direct, top 5 des processus |
+| 03 | 🌐 **Outils réseau** | Ping, IP & MAC, test DNS et latence, **scanner de ports** |
+| 04 | 📁 **Fichiers** | Navigation dans les dossiers, ouverture des fichiers et de l'Explorateur |
+| 05 | 📈 **Moniteur système** | CPU / RAM / disque en temps réel avec jauges, top 5 des processus |
 | 06 | 🚀 **Optimizer** | Nettoyage PC, Boost RAM, gestion du démarrage, Mode Gaming |
 | 07 | 🔄 **Mises à jour** | Vérifie et installe automatiquement la dernière version |
 | 08 | ⚙️ **Paramètres** | Version, infos système et modules disponibles |
 
 ### 🚀 Optimizer en détail
 
-- **Nettoyage PC** : supprime les fichiers temporaires de Windows et le cache des navigateurs
-- **Boost RAM** : libère la mémoire inutilisée par les processus en arrière-plan
-- **Gestion du démarrage** : liste et désactive les programmes lancés au démarrage de Windows
-- **Mode Gaming** : ferme les applications gourmandes, coupe les notifications et active le mode performances
+- **Nettoyage PC** : supprime les fichiers temporaires de Windows et le cache des navigateurs (jamais tes documents), après confirmation
+- **Boost RAM** : libère la mémoire des processus et purge le cache mémoire de Windows (en administrateur)
+- **Gestion du démarrage** : active / désactive les programmes au démarrage, de façon réversible (comme le Gestionnaire des tâches)
+- **Mode Gaming** : ferme les applications gourmandes, coupe les notifications et active le mode performances. Se désactive en un clic et restaure tes réglages
 
 > 💡 Lance Shadow Tool **en tant qu'administrateur** (clic droit → *Exécuter en tant qu'administrateur*) pour profiter de toutes les optimisations.
 
@@ -48,6 +48,12 @@ Aucune installation : on télécharge, on lance, c'est prêt.
 
 Le menu **07** compare ta version à la dernière release publiée ici, puis télécharge et
 installe la nouvelle version en un clic. L'application redémarre toute seule.
+
+### 🎨 Interface
+
+- Animation de démarrage avec détection du matériel, puis révélation du logo
+- Thème violet / néon, cadres et jauges colorées
+- L'affichage s'adapte quand on agrandit la fenêtre
 
 ## Installation
 
@@ -65,8 +71,7 @@ Au lancement, tape le numéro du module voulu (`01` à `08`) puis **Entrée**.
 Tape `00` pour revenir en arrière ou quitter.
 
 ```
-┌─[shadow-tool@system]─[22:43:23]
-└──> 06
+shadow@tool » 06
 ```
 
 ## Configuration requise
