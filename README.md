@@ -24,30 +24,56 @@ Aucune installation : on télécharge, on lance, c'est prêt.
 
 ## Fonctionnalités
 
-| N° | Module | Ce qu'il fait |
-|----|--------|---------------|
-| 01 | 📊 **Informations système** | OS, processeur, carte graphique, RAM, disques, durée d'allumage |
-| 02 | 🐍 **Outils Python** | Lister / installer des modules pip, lancer un script Python |
-| 03 | 🌐 **Outils réseau** | Ping, IP & MAC, test DNS et latence, **scanner de ports** |
-| 04 | 📁 **Fichiers** | Navigation dans les dossiers, ouverture des fichiers et de l'Explorateur |
-| 05 | 📈 **Moniteur système** | CPU / RAM / disque en temps réel avec jauges, top 5 des processus |
-| 06 | 🚀 **Optimizer** | Nettoyage PC, Boost RAM, gestion du démarrage, Mode Gaming |
+| N° | Catégorie | Ce qu'elle contient |
+|----|-----------|---------------------|
+| 01 | 🩺 **Santé du PC** | Note sur 100 avec conseils : espace disque, fichiers temporaires, démarrage, RAM, pilote graphique, batterie, protection système |
+| 02 | 📊 **Système** | Informations, moniteur en temps réel (CPU, RAM, GPU), gestionnaire de processus, analyse disque, batterie & températures |
+| 03 | 🎮 **Jeux** | Ping des serveurs de jeu, DNS le plus rapide, profils gaming, nettoyage des caches de jeux, Mode Gaming |
+| 04 | 🚀 **Optimizer** | Nettoyage PC, Boost RAM, gestion du démarrage, Mode Gaming |
+| 05 | 🌐 **Réseau** | Ping, IP & MAC, test de connexion, scanner de ports |
+| 06 | 🧰 **Outils** | Explorateur de fichiers, outils Python |
 | 07 | 🔄 **Mises à jour** | Vérifie et installe automatiquement la dernière version |
-| 08 | ⚙️ **Paramètres** | Version, infos système et modules disponibles |
+| 08 | ⚙️ **Paramètres** | Préférences, nettoyage planifié, points de restauration, informations |
 
-### 🚀 Optimizer en détail
+### 🩺 Santé du PC
 
-- **Nettoyage PC** : supprime les fichiers temporaires de Windows et le cache des navigateurs (jamais tes documents), après confirmation
-- **Boost RAM** : libère la mémoire des processus et purge le cache mémoire de Windows (en administrateur)
+Une note sur 100 calculée en quelques secondes, avec pour chaque point vérifié
+le chemin du menu qui permet de corriger : espace libre sur C:, fichiers temporaires,
+programmes au démarrage, mémoire utilisée, durée depuis le dernier redémarrage,
+âge du pilote graphique, usure de la batterie, mises à jour, protection du système.
+
+### 🎮 Jeux
+
+- **Ping des serveurs** : latence, minimum et gigue vers FiveM, Steam, Epic Games et Riot, plus **ton propre serveur FiveM** (ip:port mémorisé)
+- **DNS & réseau** : compare ton DNS actuel à Cloudflare, Google et Quad9, vide le cache DNS, passe au plus rapide (en administrateur) avec un bouton **« Restaurer mon DNS »**
+- **Profils gaming** : choisis les applications à fermer (ex. profil *Streaming* qui garde Spotify), les notifications, le plan d'alimentation, la veille et le Boost RAM
+- **Nettoyage des jeux** : caches FiveM (jamais les fichiers du jeu), Steam, Epic, Riot et shaders NVIDIA / AMD / DirectX, avec la taille de chaque dossier. Un jeu ouvert n'est jamais nettoyé
+
+### 📊 Système
+
+- **Processus** : tri CPU / RAM, recherche, fermeture d'un programme bloqué (les processus vitaux de Windows sont protégés)
+- **Analyse disque** : dossiers les plus lourds (navigation dossier par dossier) et 20 plus gros fichiers. Les fichiers OneDrive restés dans le cloud ne sont pas comptés
+- **Batterie & températures** : usure réelle de la batterie et cycles de charge, température / utilisation / ventilateur des cartes NVIDIA, température du processeur quand Windows la fournit
+
+### 🚀 Optimizer
+
+- **Nettoyage PC** : fichiers temporaires de Windows et caches des navigateurs (jamais tes documents), après confirmation
+- **Boost RAM** : libère la mémoire des processus et purge le cache mémoire de Windows (en administrateur), le maximum en un seul lancement
 - **Gestion du démarrage** : active / désactive les programmes au démarrage, de façon réversible (comme le Gestionnaire des tâches)
-- **Mode Gaming** : ferme les applications gourmandes, coupe les notifications et active le mode performances. Se désactive en un clic et restaure tes réglages
+- **Mode Gaming** : applique ton profil gaming. Se désactive en un clic et restaure tes réglages
+
+### ⚙️ Paramètres
+
+- **Préférences** : animation de démarrage (complète, courte ou désactivée), vérification automatique des mises à jour, mode 16 couleurs pour les vieux écrans
+- **Nettoyage planifié** : Shadow Tool nettoie tout seul chaque jour ou chaque semaine (tâche Windows, sans administrateur), même si le PC était éteint à l'heure prévue
+- **Points de restauration** : création manuelle, et **automatique avant chaque action qui modifie Windows** (Mode Gaming, démarrage, DNS)
 
 > 💡 Lance Shadow Tool **en tant qu'administrateur** (clic droit → *Exécuter en tant qu'administrateur*) pour profiter de toutes les optimisations.
 
 ### 🔄 Mises à jour automatiques
 
-Le menu **07** compare ta version à la dernière release publiée ici, puis télécharge et
-installe la nouvelle version en un clic. L'application redémarre toute seule.
+Shadow Tool vérifie en arrière-plan au démarrage si une nouvelle version existe. Le menu **07**
+la télécharge et l'installe en un clic, puis l'application redémarre toute seule.
 
 ### 🎨 Interface
 
